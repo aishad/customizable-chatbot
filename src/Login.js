@@ -9,6 +9,7 @@ class Login extends Component {
     // Gets called when the submit button is clicked
     event.preventDefault();
     this.props.loginSubmit(this.state.currentName);
+    this.props.count();
   }
   changeHandler = (event) => {
     // Gets called when the input box is updated
